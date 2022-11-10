@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playstation Video Games Library</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/modal.css">
+</head>
+<body>
+
+  <div class="container">
+    
+    <div class="banner">
+      <div class="left-banner">
+        <div class="content">
+          <span>Video Games</span>
+          <span>library</span>
+        </div>
+      </div> <!-- left-banner -->
+      <div class="right-banner">
+        <div class="content">
+          <span class="total-games"></span>
+          <span>Game <br>Titles</span>
+        </div>
+      </div> <!-- right-banner -->
+    </div> <!-- banner -->
+
+    <div class="new-game-container">
+      <button id="modal-button" class="new-game">new game</button>
+    </div> <!-- new Game container -->
+
+    <div class="card-container">
+      
+    </div> <!-- card-container -->
+  </div> <!-- container -->
+
+  <!-- modal related -->
+  <div id="modal-form" class="modal">
+
+    <!-- modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Add New Game</h2>
+      </div> <!-- modal-header -->
+      <div class="modal-body">
+        <form id="new-game-form">
+          <label for="gametitle" class="form-label">Game Name:</label> <br>
+          <input type="text" name="gametitle" id="gametitle" class="form-input" autocomplete="off"> <br> <!-- Game Name -->
+          <label for="gamepages" class="form-label">Avarege Price (US):</label> <br>
+          <input type="number" name="gamepages" id="gamepages" class="form-input" autocomplete="off"> <br> <!-- Game Price-->
+          <label for="consoleplataform" class="form-label">Which console is:</label> <br>
+          <select id="consoleplatform" class="form-dropdown"> <br> <!-- Game Console -->
+            <option value="PS2">PS2</option>
+            <option value="PS3">PS3</option>
+            <option value="PS4">PS4</option>
+            <option value="PS5">PS5</option>
+          </select> <br><br>
+          <label for="hasbeecompleted" class="form-label">Has been Completed:</label> <br>
+          <select id="hasbeencompleted" class="form-dropdown"> <br> <!-- Game Status -->
+            <option value="Completed">Completed</option>
+            <option value="In Progress">In progress</option>
+            <option value="To Play">To Play</option>
+          </select> <br>
+          <hr>
+          <input type="submit" value="submit" class="submit-button">
+        </form>
+      </div> <!-- modal body -->
+    </div> <!-- modal content -->
+
+  </div> <!-- id modal form -->
+  
+  <script src="./script/script.js"></script>
+  <script src="./script/modal.js"></script>
+</body>
+</html>
